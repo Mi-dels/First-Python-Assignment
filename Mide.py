@@ -20,4 +20,10 @@ countries =[[("Finland", "Helsinki")], [("Sweden", "Stockholm")], [("Norway", "O
 output =[[country[0].upper(), country[0][:3].upper(), country[1].upper()] for sublist in countries for country in sublist]
 print(output)
 
+#5
+Countries = [[("Finland", "Helsink")], [("sweden", "Stockholm")], [("Norway", "Oslo")]]
+output = [{"country": country.upper(), "city": city.upper()} for sublist in countries for(country, city) in sublist]
+print(output)
+#6
+
 
