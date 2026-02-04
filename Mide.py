@@ -25,5 +25,11 @@ Countries = [[("Finland", "Helsink")], [("sweden", "Stockholm")], [("Norway", "O
 output = [{"country": country.upper(), "city": city.upper()} for sublist in countries for(country, city) in sublist]
 print(output)
 #6
-
+names = [[("Asabeneh", "Yetaeyeh")], [("David", "Smith")],[("Donald", "Trump")],[("Bill","Gates")]]
+fullnames = []
+for sublist in names:
+  for first, last in sublist:
+    fullnames.append(f"{first} {last}")
+    print(fullnames)
+ 
 
