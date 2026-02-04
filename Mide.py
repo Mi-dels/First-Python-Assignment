@@ -14,6 +14,10 @@ for sublist in lists_of_lists:
     print(flattened_lists)
 #3
 output = [(i, 1, i, i**2, i**3, i**4, i**5) for i in range (11)]  
-print(result)
+print(output)
+#4
+countries =[[("Finland", "Helsinki")], [("Sweden", "Stockholm")], [("Norway", "Oslo")]]
+output =[[country[0].upper(), country[0][:3].upper(), country[1].upper()] for sublist in countries for country in sublist]
+print(output)
 
 
